@@ -11,11 +11,11 @@ int DecimaltoBinary(int n)
         return -1;
     }
 
-    int binaryno=0,i=0;
-      while (n > 0)
+    int binaryno = 0, i = 0;
+    while (n > 0)
     {
         int bit = n % 2;
-      binaryno = ( bit* pow(10,i))+ binaryno;
+        binaryno = (bit * pow(10, i)) + binaryno;
         i++;
         n = n / 2;
     }
@@ -29,14 +29,16 @@ int main()
     cout << "Enter the number to convert to binary" << endl;
     cin >> n;
 
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cout << "Enter a valid number!\n";
         return 1; // Exit with an error code
     }
 
-     int binary = DecimaltoBinary(n);
-    if (binary != -1) {
-        cout << "Binary representation: " << binary <<endl;
+    int binary = DecimaltoBinary(n);
+    if (binary != -1)
+    {
+        cout << "Binary representation: " << binary << endl;
     }
     return 0;
 }
