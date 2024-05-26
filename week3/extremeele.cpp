@@ -39,3 +39,16 @@ int main()
 return 0;
 
 }
+
+
+/*
+
+Enter the size of the array :5
+Enter the elements  of the array! :1 2 3 4 5
+1
+5
+2
+4
+3
+
+*/
