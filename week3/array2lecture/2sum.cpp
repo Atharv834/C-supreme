@@ -54,8 +54,10 @@
 #include <iostream>
 using namespace std;
 
-void threesum(int arr[],int size,int targetSum){
+void twoSum(int arr[],int size,int targetSum){
 
+/* loop of j starts frm i+1 indicates that the pairs doesnt repeates gives unique pair
+  */
   for (int i=0;i<size;i++){
     for(int j=i+1;j<size;j++){
             if(arr[i]+arr[j]==targetSum){
@@ -84,6 +86,6 @@ int main()
         cin >> arr[i];
     
     }
-threesum(arr,size,targetSum);
+  twoSum(arr,size,targetSum);
 
 }
