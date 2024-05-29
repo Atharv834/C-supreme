@@ -16,6 +16,7 @@ void Transpose(vector<vector<int>> &arr, int rowsize, int colSize)
         }
     }
 
+// print karne ke liye code bas 
     for (int i = 0; i < rowsize; i++)
     {
         for (int j = 0; j < colSize; j++)
