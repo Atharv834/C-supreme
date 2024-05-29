@@ -1,26 +1,24 @@
 #include <iostream>
-#include<stack>
+#include <stack>
 using namespace std;
 
-int main(){
+int main() {
+    
+    stack<int> s;
 
+    // Insertion
+    s.push(10);    // 10
+    s.push(304);   // 10, 304
+    s.push(55);    // 10, 304, 55
 
-stack<int>s;
+    // Size of the stack
+    cout << "Size will be: " << s.size() << endl;
 
-// insetion 
+    // Deletion
+    s.pop();  // 55 will be deleted as LIFO (Last In, First Out) is followed
 
-s.push(10);  // 10 
-s.push(304);   // 10,304 
-s.push(55);   // 10 ,304,55
+    // Top element
+    cout << "Top element is: " << s.top() << endl;
 
-// size of the stack 
-cout<<"Size will be : "<<s.size()<<endl;
-
-// deletion 
-s.pop();   // 55 will be deleted as here LIFO follow 
-
-
-// TOP ELEMENT 
-cout<<"top element is :"<<s.top()<<endl;
-
+    return 0;
 }
