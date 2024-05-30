@@ -55,7 +55,8 @@ cout<<"After rotating :";
 for (auto i : arr)
     cout << i << " ";
 
-                 ///UNIQUE 
+                 //UNIQUE 
+
 
  vector<int> arr1{11, 11, 22, 22, 22, 33, 33, 44};
     cout << "After finding the unique elements: ";  /// UNIQUE ELEMENTS FIND KARNE 
