@@ -1,27 +1,28 @@
 #include <iostream>
 using namespace std;
 
-double mySqrt(int x) {
+int mySqrt(int x) {
         int s = 0;
         int e = x;
-        int ansIndex = -1;
+        int ans=-1;
 
-        long long int mid = s + (e - s) / 2;
-        
         while (s <= e) {
+           long long int mid = s + (e - s) / 2;
 
-            long long int prod = mid * mid;
-            if (prod == x) {
+            long long int midsqr = mid * mid;
+        
+            if (midsqr == x) {
                 return mid;
-            } else if (prod < x) {
-                ansIndex = mid;
-                s = mid + 1;
-            } else {
+            } 
+            else if (midsqr > x) {
                 e = mid - 1;
+            } else {
+                ans=mid;
+                s = mid + 1;
             }
             mid = s + (e - s) / 2;
         }
-        return ansIndex;
+        return ans;
     }
 
 int main (){
@@ -29,7 +30,9 @@ int main (){
 
 int num =54;
 double ans = mySqrt(num);
-cout<<ans;
+cout<<"The sqrt of "<<num<<" is nearer to "<<ans;
 }
 
+// 54 agar number diya hai toh iska sqrt 0-54 ke bich mei ho chalega hamehsa 
+// so iska TC O(logn) hoga 
 
