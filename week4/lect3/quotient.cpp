@@ -1,6 +1,6 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+    #include <iostream>
+    #include <vector>
+    using namespace std;
 
 // bina divide karke kese quotient nikale wihtout using the % and / operator 
 int quotient(int divident, int divisor){
