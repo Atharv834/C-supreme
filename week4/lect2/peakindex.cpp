@@ -40,17 +40,16 @@
 #include <vector>
 using namespace std;
 
-int  peakElement(vector<int>& arr) {
+int  findPeakElement(vector<int>& arr) {
     int size = arr.size();
     int s = 0;
     int e = size - 1;
     int ansIndex =-1;
 
     int mid = s + (e - s) / 2;
-    while (s <= e)
-    {
+    while (s <= e){
 
-       if (arr[mid] < arr[mid + 1]) {
+       if (mid+1<size && arr[mid] < arr[mid + 1]) {
             s = mid + 1;
         } else {
             ansIndex=mid;   // store and compute se nikala ki mid ans ho bhi sakta and nhi bhi 
@@ -64,7 +63,7 @@ return ansIndex;
 
 int main() {
     vector<int> arr{10, 20, 70, 60, 50, 40, 15};
- int index=  peakElement(arr);
+ int index=  findPeakElement(arr);
  cout<<"Peak element ka index hai : "<<index<<endl;
 }
 

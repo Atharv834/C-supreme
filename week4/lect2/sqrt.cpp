@@ -27,10 +27,9 @@ int mySqrt(int x) {
 
 int main (){
 
-
-int num =54;
-double ans = mySqrt(num);
-cout<<"The sqrt of "<<num<<" is nearer to "<<ans;
+    int num = 63;
+    double ans = mySqrt(num);
+    cout << "The sqrt of " << num << " is nearer to " << ans;
 }
 
 // 54 agar number diya hai toh iska sqrt 0-54 ke bich mei ho chalega hamehsa 

@@ -30,13 +30,16 @@ int pivotIndex(vector<int> &arr){
         if (mid >= 0 && arr[mid] < arr[mid - 1]){
             return mid - 1;
         }
-        if (arr[mid] < arr[s]){
-            e = mid - 1;
+        if (arr[mid + 1] > arr[mid]){
+
+            if (arr[mid] < arr[s]){  //right mei ho tum  so left mei jao 
+                e = mid - 1;
+            } 
+            else{  // left mei ho tum se right mei jao 
+                s = mid + 1;
+            }
         }
-        else{
-            s = mid + 1;
-        }
-       
+
         mid = s + (e - s) / 2;
     }
 
