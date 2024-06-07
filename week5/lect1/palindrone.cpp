@@ -18,7 +18,7 @@ void checkPalindrome(vector<char>& arr) {
 }
 
 int main() {
-    const char str[] = "racecar"; 
+    const char str[] = "r"; 
 
     vector<char> arr(str, str + strlen(str));
 
