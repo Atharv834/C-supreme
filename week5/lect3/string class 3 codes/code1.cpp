@@ -20,7 +20,7 @@ public:
             char mappedCharacter = mapping[message[i]];
             ans.push_back(mappedCharacter);
         }
-        return ans;
+        return ans; 
     }
     string decodeMessage(string key, string message) {
         //step1: create mapping
