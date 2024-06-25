@@ -3,15 +3,16 @@ using namespace std;
 
 int getFact(int n){
 
-    if(n==1 || n==0) return 1;
-    int fact = getFact(n-1);
-    int ans = n*fact;   //return n*getFact(n-1);
+    if (n == 1 || n == 0)
+        return 1;
+    int fact = getFact(n - 1);
+    int ans = n * fact;   // return n*getFact(n-1);
     return ans;
 }
 
 int pow(int n){
 
-    if( n==0) return 1;  
+    if( n==0 ) return 1;  
     return  2* pow(n-1);
 }
 
