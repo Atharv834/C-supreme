@@ -32,8 +32,7 @@ public:
     int seats;
 
     // Constructor for Car
-    Car(string name, string model, int noOfTyres, int noOfDoors, int seats)
-        : Vehicle(name, model, noOfTyres) {
+    Car(string name, string model, int noOfTyres, int noOfDoors, int seats) : Vehicle(name, model, noOfTyres) {
         cout << "I am inside the Car constructor" << endl;
         this->noOfDoors = noOfDoors;
         this->seats = seats;
