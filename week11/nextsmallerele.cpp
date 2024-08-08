@@ -1,33 +1,55 @@
-#include<iostream>
-#include<algorithm>
-#include<stack>
+#include <iostream>
 #include<vector>
+#include<stack>
+#include<algorithm>
+using namespace std;
 
-void SmallerElement(stack<int>s , vector<int>arr,vector<int>ans){
+void nextSmallerElement(int arr[], int n, vector<int>& ans) {
+  stack<int> s;
+  s.push(-1);
 
-    stack<int>s;
-    s.push_back(-1);
-    int n=arr.size();
-    for (int i=n-1;i>=0;i--){
-        int ele=arr[i];
-
-    while(s.top()>ele){
-        s.pop();
+  for(int i=n-1; i>=0; i-- ) {
+    int element = arr[i];
+    while(s.top() >= element) {
+      s.pop();
     }
+    //jab main yaha pohocha, iska mtlb, stack top pr koi chooota elemnet
+    //aa chuka h, usko answer me store karlo
     ans.push_back(s.top());
-    arr.push(ele);
-
-    }
+    //baaki element ko stack me push toh krna hi h
+    s.push(element);
+  }
 
 }
 
+void prevSmallerElement(int arr[], int n, vector<int>& ans) {
+  stack<int> s;
+  s.push(-1);
 
-int main(){
+  //fark sirf ioss wale loop ka h 
+  for(int i=0; i<n; i++) {
+    int element = arr[i];
+    while(s.top() > element) {
+      s.pop();
+    }
+    //yaha agye mtlb stack top koi chotta element h 
+    ans.push_back(s.top());
+    s.push(arr[i]);
+  }
+}
 
-    vector<int>v
+int main() {
+  //input 
+  int arr[] = {8,4,6,2,3};
+  int n = 5;
 
-    stack<int>s ;
-    s.push_back(-1);
-   
+  vector<int> ans;
 
+  prevSmallerElement(arr,n,ans);
+  //reverse(ans.begin(), ans.end());
+  for(auto i: ans) {
+    cout << i << " ";
+  }
+
+  return 0;
 }
