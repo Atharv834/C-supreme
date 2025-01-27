@@ -5,42 +5,42 @@ using namespace std;
 int main()
 {
 
-    //2D array/vector
-    vector<vector<int> > arr(5, vector<int>(4,0));
-    int totalRows = arr.size();
-    int totalColumns = arr[0].size();
+    // //2D array/vector
+    // vector<vector<int> > arr(5, vector<int>(4,0));
+    // int totalRows = arr.size();
+    // int totalColumns = arr[0].size();
     //2d array created
     //with 5 rows
     //with 4 columns
     //with intial value of each cell as "0"
 
-    vector<vector<int> > brr(4);
+    // vector<vector<int> > brr(4);
 
-    brr[0] = vector<int>(4);
-    brr[1] = vector<int>(2);
-    brr[2] = vector<int>(5);
-    brr[3] = vector<int>(3);
+    // brr[0] = vector<int>(4);
+    // brr[1] = vector<int>(2);
+    // brr[2] = vector<int>(5);
+    // brr[3] = vector<int>(3);
 
-    int totalRowCount = brr.size();
+    // int totalRowCount = brr.size();
     // int totalColumnCount = brr[i].size();
     
-//     vector<int> first;
-//     //vector<int> second;
+    vector<int> first;
+    vector<int> second;
 
-//     first.push_back(10);
-//     first.push_back(11);
-//     first.push_back(12);
-//     first.push_back(13);
+    first.push_back(10);
+    first.push_back(11);
+    first.push_back(12);
+    first.push_back(13);
 
-//     //traversing the vector using iterator 
+    //traversing the vector using iterator 
 
-//     //craete an iterator 
-//     vector<int>::iterator it = first.begin();
+    //craete an iterator 
+    vector<int>::iterator it = first.begin();
 
-//     while(it != first.end()) {
-//         cout << *it << " ";
-//         it++;
-//     }
+    // while(it != first.end()) {
+    //     cout << *it << " ";
+    //     it++;
+    // }
 
 
     // second.push_back(100);
@@ -63,19 +63,19 @@ int main()
 
 
     // creation
-    // vector<int> marks;
-    // //cout << marks.max_size() << endl;
+    vector<int> marks;
+    cout << marks.max_size() << endl;
 
-    // // marks.reserve(10);
+    marks.reserve(10);
 
-    // marks.push_back(10);
-    // marks.push_back(20);
-    // marks.push_back(30);
-    // marks.push_back(40);
-    // //marks.clear();
-    // marks.insert(marks.begin(), 50);
+    marks.push_back(10);
+    marks.push_back(20);
+    marks.push_back(30);
+    marks.push_back(40);
+    //marks.clear();
+    marks.insert(marks.begin(), 50);
     
-    // cout << marks.size() << endl;
+    cout << marks.size() << endl;
 
     // marks.erase(marks.begin(), marks.end());
     // cout << marks.size() << endl;

@@ -12,12 +12,14 @@ int main() {
     st.insert(15);
     st.insert(8);
     st.insert(4);
+    st.insert(20);
+    st.insert(12);
 
     if(st.count(155) == 1) {
-        cout << "Found";
+        cout << "Found"<<endl;
     }
     if(st.count(155) == 0) {
-        cout << "not found";
+        cout << "not found "<<endl;
     }
 
     if(st.find(155) != st.end() ) {
@@ -27,19 +29,19 @@ int main() {
         cout << "Not found";
     }
 
-    st.erase(st.begin(), st.end());
-    cout << st.size() << endl;
+    // st.erase(st.begin(), st.end());
+    // cout << st.size() << endl;
 
-    cout << st.size() << endl;
-    st.clear();
-    cout << st.size() << endl;
+    // cout << st.size() << endl;
+    // st.clear();
+    // cout << st.size() << endl;
 
-    if(st.empty()) {
-        cout << "set is empty" << endl;
-    }
-    else {
-        cout << "set is not empty" << endl;
-    }
+    // if(st.empty()) {
+    //     cout << "set is empty" << endl;
+    // }
+    // else {
+    //     cout << "set is not empty" << endl;
+    // }
 
 
     //traverse
@@ -49,9 +51,6 @@ int main() {
         cout << *it << " ";
         it++;
     }
-
-
-
 
     return 0;
 }

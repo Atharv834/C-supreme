@@ -13,7 +13,7 @@ bool checkEven(int a){
 
 int main() {
 
-    vector<int> arr{10, 20, 30, 40, 50,78,60,50,30};
+    vector<int> arr{10, 20, 30,55, 40, 50,78,60,50,30};
 
     // for_each: Particular range mein function apply karta hai   (iterator matlab index hota )
     for_each(arr.begin(), arr.end(), printDouble); 
