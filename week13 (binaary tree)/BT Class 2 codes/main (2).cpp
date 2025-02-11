@@ -46,20 +46,5 @@ public:
         solve(root, targetSum, sum, path, ans);
         return ans;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 };
