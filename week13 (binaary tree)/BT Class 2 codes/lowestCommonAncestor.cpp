@@ -1,11 +1,5 @@
 /**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
  */
 class Solution {
 public:
@@ -14,10 +8,10 @@ public:
         if(root == NULL) {
             return NULL;
         }
-        if(root == p) {
+        if(root == p) {                    //agar vohi root hi p ho toh
             return p;
         }
-        if(root == q) {
+        if(root == q) {                    // root hi q ho toh 
             return q;
         }
 
@@ -38,8 +32,6 @@ public:
             //ans => root NOde
             return root; 
         }
-
-
 
 
 
